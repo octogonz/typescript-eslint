@@ -35,7 +35,7 @@ export default util.createRule<Options, MessageIds>({
         return false;
       }
 
-      return /^I[A-Z]/.test(name);
+      return /^_?I[A-Z]/.test(name);
     }
 
     return {

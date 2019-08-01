@@ -22,6 +22,14 @@ interface IAnimal {
     },
     {
       code: `
+interface _IAnimal {
+    name: string;
+}
+            `,
+      options: ['always'],
+    },
+    {
+      code: `
 interface IIguana {
     name: string;
 }
