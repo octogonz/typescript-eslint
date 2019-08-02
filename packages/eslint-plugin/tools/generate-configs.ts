@@ -21,6 +21,7 @@ const DEFAULT_RULE_SETTING = 'warn';
 const BASE_RULES_TO_BE_OVERRIDDEN = new Set([
   'camelcase',
   'func-call-spacing',
+  'dot-notation',
   'indent',
   'no-array-constructor',
   'no-extra-parens',

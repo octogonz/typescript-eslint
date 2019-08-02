@@ -44,6 +44,25 @@ declare module 'eslint/lib/rules/camelcase' {
   export = rule;
 }
 
+declare module 'eslint/lib/rules/dot-notation' {
+  import { TSESLint, TSESTree } from '@typescript-eslint/experimental-utils';
+
+  const rule: TSESLint.RuleModule<
+    'useBrackets' | 'useDot',
+    [
+      {
+        allowKeywords?: boolean;
+        allowPattern?: string;
+        allowPrivateClassPropertyAccessViaBracketNotation?: boolean;
+      },
+    ],
+    {
+      MemberExpression(node: TSESTree.MemberExpression): void;
+    }
+  >;
+  export = rule;
+}
+
 declare module 'eslint/lib/rules/indent' {
   import { TSESLint, TSESTree } from '@typescript-eslint/experimental-utils';
 

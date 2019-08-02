@@ -7,6 +7,7 @@ import camelcase from './camelcase';
 import classNameCasing from './class-name-casing';
 import consistentTypeAssertions from './consistent-type-assertions';
 import consistentTypeDefinitions from './consistent-type-definitions';
+import dotNotation from './dot-notation';
 import explicitFunctionReturnType from './explicit-function-return-type';
 import explicitMemberAccessibility from './explicit-member-accessibility';
 import funcCallSpacing from './func-call-spacing';
@@ -70,6 +71,7 @@ export default {
   'class-name-casing': classNameCasing,
   'consistent-type-assertions': consistentTypeAssertions,
   'consistent-type-definitions': consistentTypeDefinitions,
+  'dot-notation': dotNotation,
   'explicit-function-return-type': explicitFunctionReturnType,
   'explicit-member-accessibility': explicitMemberAccessibility,
   'func-call-spacing': funcCallSpacing,
