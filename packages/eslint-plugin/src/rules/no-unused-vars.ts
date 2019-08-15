@@ -60,6 +60,9 @@ export default util.createRule({
       'TSEnumMember Identifier'(node: TSESTree.Identifier) {
         context.markVariableAsUsed(node.name);
       },
+      JSXIdentifier(node: TSESTree.Identifier) {
+        context.markVariableAsUsed(node.name);
+      },
       '*[declare=true] Identifier'(node: TSESTree.Identifier) {
         context.markVariableAsUsed(node.name);
         const scope = context.getScope();
